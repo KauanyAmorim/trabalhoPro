@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <title> cabel's</title>
+
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <header><!-- Barra de navegação -->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+            <a class="navbar-brand" href="#"> cabel's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Shampoo">Shampoo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Mascaras">Máscaras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Condicionador">Condicionador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#saiba_mais">Saiba mais</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                        Entrar
+                    </button>
+                    
+                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                      <div class="col">
+                                         Nome <input type="text" class="form-control" id="firstName" placeholder="Nome">
+                                      </div>
+                                     
+                                      <div class="col">
+                                      Usuário <input type="text" class="form-control" id="usuario" placeholder="Usuário">
+                                      </div>
+                                      <div class="col">
+                                        E-mail <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                      </div>
+                                      <div class="col">
+                                        Senha <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                      </div>
+                                      <div class="col">
+                                        Cofirme sua senha <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha">
+                                      </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button id="btn_Concluir" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo" onclick="Concluir()">
+                                  Concluir
+                              </button>
+                              
+                              <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div id="resposta" class="modal-body">
+                                    Cadastro realizado com sucesso!
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="fechar()">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+              </form>
+            </div>
+          </nav>
+    </header>
+  
+    <main>
+      <section><!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/gift-habeshaw-5ZB3nXfPYig-unsplash.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cuide dos seus cachos direito, Mona!!</h5>
+                    <p>Temos tudo que você pecisa para se sentir mais confiante com seu cabelo </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/brooks-leibee-UgVxbEyOESw-unsplash.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Aprenda a cuidar melhor dos seus cachos</h5>
+                    <p>Com as maiores influencers, tutoriais e produtos ideais </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/chris-ghinda-ShwHQ5JY-xg-unsplash.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Em casa e sem precisar gastar muito</h5>
+                    <p>Em casa mesmo você pode aprender a cuidar dos seus cachos e elevar sua auto-estima, tudo é questão de escolhas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/michael-starkie-eNFd1jn7vYY-unsplash.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Seja independente</h5>
+                    <p>Já imaginou não precisar gastar muito em salões para ter um cabelo divo? <br>saber os produtos certos, ter um cronograma, ter a finalização das divas e muito mais...  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/noemie-roussel-dsZ1dLCc5EQ-unsplash.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5> Evite ter alguns modos, para não danificar seu cabelo </h5>
+                    <p> confie no processo </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"> </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"> </span>
+            </button>
+          </div>
+      </section>
+    
+      <section"><!-- Shampoo -->
+        <div >
+          <div class="container-fluid p-3 mb-2 bg-dark text-white">
+            <h4><strong><p class="text-center">Saúde do couro cabeludo </p></strong></h4>
+            <p class="lead text-center">Pequenos hábitos trazem grandes mudanças!</p>
+            <div class="container-fluid p-3 mb-2 bg-dark text-white">
+              <div class="row">
+                <div class="col">
+                  <img src="imgs/Cabelo-cacheado-seco (1).webp" alt="Imagem de uma mulher" class="img-thumbnail mx-auto d-block">
+                </div>
+                <div class="col">
+                  <h5><p class="text-center"><strong>Importância de cuidar do cabelo </strong></p></h5>
+                  <h6><p class="lead text-center">
+                    “O couro cabeludo produz uma oleosidade que é saudável tanto para a saúde dele mesmo, quanto para a saúde dos fios.
+                     Nos cabelos cacheados essa oleosidade demora mais para alcançar as pontas e os shampoos convencionais podem causar danos, 
+                     pois removem a mesma de maneira excessiva”.</p></h6>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <h5><p class="text-center">O que não pode fazer com o cabelo cacheado?</p></h5>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Lavar o cabelo com shampoo todos os dias.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Secar o cabelo com toalha felpuda.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Lavar o cabelo à noite e dormir com ele molhado. </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Esquecer de usar o protetor térmico antes do secador.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Pentear o cabelo cacheado seco.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <h5><p class="text-center"><strong> Cacho terapia </strong></p></h5>
+                  <h6><p class="lead text-center">A cacho terapia, é uma ótima forma de recuperar a vida do seu cabelo, o brilho e a maciez </p></h6>
+                    <p class="lead text-center">Para te ajudar aqui vão algumas dicas de como começar :</p>
+                    <table class="table shadow p-3 mb-5 bg-dark rounded">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Hidratação</th>
+                          <th scope="col">Benefícios da hidratação</th>
+                          <th scope="col">Nutrição</th>
+                          <th scope="col">Benefícios da nutrição</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Máscara Banho de Lua Minguante</th>
+                          <td>
+                            
+                            A Máscara Banho de Lua Minguante da Bela Berê Cosmético
+                           <p> é uma máscara capilar indicada para cabelos com excesso de volume.</p>
+                           <p>  Deixando-os com disciplina e auxiliando no combate do frizz</p>
+                           
+                          </td>
+                          <td>Ativador de Cachos com Macadâmia e Rícino </td>
+                          <td>O Ativador de Cachos e Revitalização da Bela Berê Cosméticos 
+                          <p> é um creme capilar rico em Óleo de Macadâmia e Rícino que juntos
+                          <p> possuem especial utilidade para os cabelos ressecados e sem brilho </p>
+                          </p>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Máscara Hidratante Banho de Colágeno</th>
+                          <td>
+                            A Máscara Hidratante Efeito Teia Banho de Colágeno da Bela
+                            <p> ê Cosméticos é uma máscara capilar que repara e nutre o cabelo.
+                            <p>  Reduz a porosidade e devolve o brilho e a elasticidade do cabelo.</p>
+                              </p>
+                          </td>
+                          <td>Ativador de Cachos com Óleo de Coco </td>
+                          <td>
+                            O Ativador de Cachos e Emoliência da Bela Berê Cosméticos 
+                          <p>  é um creme capilar rico em Óleo de Coco, ativo que hidrata profundamente os fios deixando o cabelo com brilho e sedosidade
+
+                          </p>
+
+                          </td>
+                      </tbody>
+                    </table>
+                    <p class="lead">
+                      Para mais detalhes segue um canal do YouTube: 
+                      <p>Canal - <a href="https:/www.youtube.com/watch?v=tinFYFOEdKY">YouTube</a></p>
+                    </p>
+                    <h5><p class="text-center"><strong>Tipos de finalzações</strong></p></h5>
+                    <h6><p class="lead text-center">Caso você não saiba o nome de algumas finalzações,
+                      trouxemos uma lista com o nome de algumas</p></h6>
+                   
+                      <table class="table">
+                        <thead class="thead-dark">
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Fitagem</td>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Dedoliss</td>
+                            </tr>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Rake and shake </td>
+                            </tr>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Plopping</td>
+                            </tr>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Bigodim</td>
+                            </tr>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Twist</td>
+                            </tr>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section><!-- Dicas -->
+        <div id=" Dicas ">
+          <div class="container-fluid p-3 mb-2 bg-secondary text-white">
+            <h4><strong><p class="text-center">Duas dicas de ouro para você usar no cabelo</p></strong></h4>
+           
+            <br>
+            
+            <br>
+            <div class="row">
+              <div class="col">
+                <h5><p class="text-center">Babosa no cabelo</p></h5>
+               
+                <br>
+                
+                
+              </div>
+              <div class="col">
+                <h5><p class="text-center">Fases da lua para cortar o cabelo</p></h5>
+              
+                <br>
+               
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section><!-- Itens  -->
+        <div id="Itens">
+          <div class="container-fluid p-3 mb-2 bg-dark text-white">
+            <h4><strong><p class="text-center">Itens que ajudarão seu cabelo </p></strong></h4>
+            <h6><p class="lead text-center">
+          
+               Os alimentos ricos em proteínas, como carne, peixe, leite, ovos e iogurte,
+               são necessários para a formação de queratina e colágeno,
+               que são fundamentais para ajudar na estrutura do cabelo,
+               estimulando um crescimento mais rápido e mais bonito dos fios.
+            
+              <p class="lead text-center">Tente se alimentar bem, Isso ajudar no seu crescimento capilar!!</p>
+              <br>
+            </p></h6>
+            <div class="row">
+              <div class="col">
+                <h6><p class="lead text-center"> Cuidados</p></h6>
+                <br>
+                <table class="table shadow p-3 mb-5 bg-dark rounded">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">°</th>
+                      <th scope="col">Métodos</th>
+                      <th scope="col">Alimentos que auxiliam no desenvolvimento capilar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td> Ovos</td>
+                      <td>É um alimento rico em proteínas, vitaminas e minerais, como ferro, zinco e selênio.
+                         Essa composição contribui para a multiplicação das células dos cabelos,
+                        proporcionando o crescimento e o fortalecimento dos fios.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Cenoura</td>
+                      <td>Um alimento rico em betacaroteno e vitamina A,
+                        que atua como antioxidante e combatente dos radicais livres.
+                         Esse processo ajuda a evitar a queda dos cabelos e perda de pigmentos que resulta nos cabelos branco.
+                         O consumo diário de uma unidade média é o suficiente para colaborar na nutrição e  
+                         aumento das células do couro cabeludo. Ademais,
+                         tem uma  interferência positiva na produção da oleosidade natural dos fios.
+                        </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td> Peixes</td>
+                      <td>Com alta concentração de ômega 3, selênio, cálcio, ferro, fósforo e vitamina B1, 
+                        os peixes são excelentes opções de alimentos para fortalecer os cabelos. 
+                        Além do combate a inflamações, protegem o couro cabeludo da radiação ultravioleta,
+                         melhorando a circulação dos nutrientes até chegar ao bulbo capilar.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td> Sementes e oleaginosas</td>
+                      <td>As sementes de chia, linhaça, girassol  assim como nozes, óleo de linhaça ou de canola são alimentos ricos em ômega 3,
+                         vitamina E e minerais como potássio e selênio.
+                         Esses nutrientes são primordiais para manter os fios fortes, 
+                         brilhantes e sedosos, com redução da queda e prevenção contra o surgimento de caspa.
+                        </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td> Frutas cítricas</td>
+                      <td>As frutas cítricas como laranja, morango, tangerina, kiwi, limão, abacaxi,  ricas em vitamina C, 
+                        são também responsáveis pela produção do colágeno, proteína essencial na estruturação dos fios capilares.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Espinafre</td>
+                      <td>O espinafre é composto de proteína e ferro, mineral que atua na formação dos glóbulos vermelhos e auxilia na nutrição dos folículos capilares.
+                         Dessa maneira, seu consumo potencializa a força dos cabelos, evitando a perda de brilho, ressecamento, queda e fraqueza.
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td> Feijão</td>
+                      <td>A riqueza em ferro faz do feijão um alimento imprescindível na alimentação diária.
+                         Além de evitar a anemia, pode assegurar que os cabelos se mantenham saudáveis.
+                         Fonte de zinco, o feijão fornece aminoácidos suficientes para a formação dos fios.
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col">
+                <br><br>
+                <div class="container-fluid p-3 mb-2 bg-secondary text-white rounded shadow p-3 mb-5 bg-dark rounded">
+                  <h5><strong><p class="text-center">Cuide bem do seu cabelo </p></strong></h5>
+                </div>
+                <img src="imgs/comida.png" alt="Imagem responsiva" class="img-thumbnail rounded mx-auto d-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section><!-- Cuidados para cabelos -->
+        <div id="Cuidados para cabelos">
+          <div class="container-fluid p-3 mb-2 bg-secondary text-white">
+            <h4><strong><p"text-center"> Cuidados para cabelos </p></strong></h4>
+
+            <h5><strong><p  id="Shampoo" class= "text-center"> Shampoo </p></strong></h5>
+            <div class="row">
+              
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2 text-center">
+                <p class="lead text-center"> DICCO </p>
+                <img src="imgs/shampoo01.jfif"   class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2 " >
+                <p class="lead text-center"> GR</p>
+                <img src="imgs/Shampoo01.png"   class="zoom" class="img-thumbnail rounded mx-auto d-block" alt="">
+
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center"> ENCRESPADO</p>
+                <img src="imgs/shampoo03.jfif"  class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center"> OCEANE</p>
+                <img src="imgs/shampo02Sh.jfif"  class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center"> WELLA </p>
+                <img src="imgs/Shampoo02.png" class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+
+              </div>
+            </div>
+            <h5><strong><p   id="Mascaras"    class="text-center"> Máscaras</p></strong></h5>
+            <div class="row">
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2" >
+
+                <p class="lead text-center">LUMINA</p>
+                <img src="imgs/mascara01.jfif" class="zoom"  class="img-fluid zoom" alt="Imagem 1">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">OCEANE</p>
+                <img src="imgs/mascara02.jfif" class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+              <p class="lead text-center">ALFAPARF</p>
+                <img src="imgs/mascara03.jfif" class="zoom" class="img-thumbnail rounded mx-auto d-block" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">DUETTO</p>
+                <img src="imgs/MASCARA04.jfif" class="zoom"  class="img-thumbnail rounded mx-auto d-block" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">SALON LINE</p>
+                <img src="imgs/MASCARA05.jfif"  class="zoom" class="img-thumbnail rounded mx-auto d-block" alt="">
+              </div>
+            </div>
+            <h5><strong><p   id="Condicionador"    class="text-center">Condicionador</p></strong></h5>
+            <div class="row">
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">OCEANE</p>
+                <img src="imgs/condicio01.jfif"  class="zoom" class="img-thumbnail rounded mx-auto d-bloc" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">ENCRESPADO</p>
+                <img src="imgs/condicio02.jfif"  class="zoom" class="img-thumbnail rounded mx-auto d-bloc" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">CARACOL</p>
+                <img src="imgs/condicio03.jfif"  class="zoom" class="img-thumbnail rounded mx-auto d-bloc" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">DOVE</p>
+                <img src="imgs/COND04.jfif" class="zoom"  class="img-thumbnail rounded mx-auto d-bloc" alt="">
+              </div>
+              <div class="col shadow p-3 mb-5 bg-dark rounded mx-2">
+                <p class="lead text-center">CACHOS TERAPIA</p>
+                <img src="imgs/COND05.jfif" class="zoom"  class="img-thumbnail rounded mx-auto d-bloc" alt="">
+              </div>
+            </div>
+            <p class="lead">
+             Quer saber como cuidar melhor dos seus cachos? 
+              <a href="" class="text-dark">Acesse</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><!-- Rodapé -->
+      <div id="saiba_mais">
+        <div class="container-fluid p-3 mb-2 bg-white text-white">
+          <img src="imgs/Logo de moda feminina rosa .png" class="rounded mx-auto d-block" alt="">
+          <h4><strong> p class="text-center text-dark"> New Cachos</p></strong></h4>
+          <div class="row d-flex justify-content-around">
+            <div class="col shadow p-3 mb-5 bg-light rounded mx-2"><!-- Canais de cabelos -->
+              <h4><p class="lead text-center text-dark">Canais de cabelos </p></h4>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=fSjC8VDG9zo" class="text-info">My Curly Tutorials</a></p>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=LoEBYcRwHlQ" class="text-info">Afro Girls</a></p>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=YaOafqVIEqU" class="text-info">
+                Taynara Pereira Oficial</a></p>
+                <p class="text-center"><a href="https://www.youtube.com/watch?v=eRyO5vpPxE4" class="text-info">
+                  Tamires Maia</a></p>
+            </div>
+            <div class="col shadow p-3 mb-5 bg-light rounded mx-2"><!--Canais de cabelos  -->
+              <h4><p class="lead text-center text-dark">Canais de cabelos</p></h4>
+              <p class="text-center"><a href="https://https://www.youtube.com/watch?v=p8aDgN0BlnYt" class="text-info"> Graciely Junqueira</a></p>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=Gax7F5cTk3w" class="text-info">Sarah Carciano</a></p>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=AIedeYDnMSs" class="text-info">Ana Lídia Lopes</a></p>
+              <p class="text-center"><a href="https://www.youtube.com/watch?v=yxEF5Z1dhD4" class="text-info">Erika Vasconcelos</a></p>
+            
+            </div>
+            <div class="col shadow p-3 mb-5 bg-light rounded mx-2"><!-- Influencers -->
+              <h4><p class="lead text-center text-dark">Influencers</p></h4>
+              <p class="text-center"><a href="https://www.instagram.com/dudabuchmann/" class="text-info">Duda Buchmann</a></p>
+              <p class="text-center"><a href="https://www.instagram.com/juulialira/" class="text-info">Julia Lira</a></p>
+              <p class="text-center"><a href="https://www.instagram.com/grazi_max/" class="text-info">Grazi Max</a></p>
+              <p class="text-center"><a href="https://www.instagram.com/santananath/" class="text-info">Nathália Santana</a></p>
+            </div>
+            <div class="col shadow p-3 mb-5 bg-light rounded mx-2"><!-- Redes sociais -->
+              <h4><p class="lead text-center text-dark">Redes sociais</p></h4>
+              <p class="text-center"><a href="" class="text-info">WhatsApp</a></p>
+              <p class="text-center"><a href="" class="text-info">Instagram</a></p>
+              <p class="text-center"><a href="" class="text-info">Faacebook</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="scrollToTop()" id="scrollBtn"  title="Voltar ao Topo">
+        <i class="bi bi-chevron-compact-up"></i>
+      </button>
+  
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="Script.js"></script>
+
+  </footer>
+</body>
+</html>
